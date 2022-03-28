@@ -10,7 +10,7 @@ jobs:
     #ubuntu uses bash, windows uses shell commands 
     steps: 
       - name: echo a string
-        run: eccho "Hello!!! WELCOME TO WORKFLOW"
+        run: echo "Hello!!! WELCOME TO WORKFLOW"
       - name: multiline script
         run: |
             node -v
