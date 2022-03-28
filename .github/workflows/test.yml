@@ -3,12 +3,15 @@ name: Shell commands
 on: [push]
 
 jobs: 
+#key for this object is name of the job, 
   run-shell-command: 
     runs-on: ubuntu-latest
+    #steps are array of objects
+    #ubuntu uses bash, windows uses shell commands 
     steps: 
       - name: echo a string
         run: echo "Hello!!! WELCOME TO WORKFLOW"
       - name: multiline script
-        run:
-          node -v
-          npm -v 
+        run: |
+            node -v
+            npm -v 
