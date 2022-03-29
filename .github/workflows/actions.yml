@@ -13,6 +13,8 @@ jobs:
         run: |
           pwd
           ls -a
+          git fetch
+          git checkout
       - name: simple js actions
         id: greet
         uses: actions/hello-world-javascript-action@v1.1
